@@ -1,0 +1,38 @@
+﻿<Window x:Class="WarSIS.SharedForms.OwerWorkTemplate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WarSIS.SharedForms"
+        mc:Ignorable="d"
+        Title="Выберите начальную и конечные даты" Height="215" Width="293" ResizeMode="NoResize" SizeToContent="Height" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="ButtonsGrid" Grid.Row="5">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="ButtonYes" Content="Сохранить" Grid.Column="0" Margin="10,5" Click="ButtonYes_Click"/>
+            <Button x:Name="ButtonNo" Content="Отмена" Grid.Column="1" Margin="10,5" IsCancel="True" IsDefault="True"/>
+        </Grid>
+        <TextBlock Margin="10,0" TextWrapping="Wrap" Text="Дата начала:" VerticalAlignment="Center"/>
+        <TextBlock Margin="10,0" TextWrapping="Wrap" Text="Дата окончания:" VerticalAlignment="Center" Grid.Row="2"/>
+        <DatePicker x:Name="StartDateBox" Margin="10,0" Grid.Row="1" VerticalAlignment="Center"/>
+        <DatePicker x:Name="EndDateBox" Margin="10,8" Grid.Row="3" VerticalAlignment="Center"/>
+
+    </Grid>
+</Window>

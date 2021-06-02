@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarSIS", "WarSIS\WarSIS.csproj", "{B1771677-A8F2-499C-AAFC-037EDA04F925}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarSISModelsDB", "..\WarSISModelsDB\WarSISModelsDB\WarSISModelsDB.csproj", "{EA3B2E85-A6EB-4918-BCF5-871A18EA4AC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarSISDataBase", "..\WarSISDataBase\WarSISDataBase\WarSISDataBase.csproj", "{AC13848D-6AB3-4675-90F9-19E3171E8A4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarSISATests", "WarSISTests\WarSISATests.csproj", "{0187439B-6D46-48FD-A61F-DE8781453348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarSISDataBaseTests", "..\WarSISDataBase\WarSISTests\WarSISDataBaseTests.csproj", "{CE7337A7-79C8-457F-BBAC-974C6A813325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarSISModelsDBTests", "..\WarSISModelsDB\WarSISModelsDBTests\WarSISModelsDBTests.csproj", "{E171357A-2F21-45C8-8D58-1EF66B993982}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1771677-A8F2-499C-AAFC-037EDA04F925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1771677-A8F2-499C-AAFC-037EDA04F925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1771677-A8F2-499C-AAFC-037EDA04F925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1771677-A8F2-499C-AAFC-037EDA04F925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA3B2E85-A6EB-4918-BCF5-871A18EA4AC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA3B2E85-A6EB-4918-BCF5-871A18EA4AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA3B2E85-A6EB-4918-BCF5-871A18EA4AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA3B2E85-A6EB-4918-BCF5-871A18EA4AC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC13848D-6AB3-4675-90F9-19E3171E8A4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC13848D-6AB3-4675-90F9-19E3171E8A4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC13848D-6AB3-4675-90F9-19E3171E8A4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC13848D-6AB3-4675-90F9-19E3171E8A4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0187439B-6D46-48FD-A61F-DE8781453348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0187439B-6D46-48FD-A61F-DE8781453348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0187439B-6D46-48FD-A61F-DE8781453348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0187439B-6D46-48FD-A61F-DE8781453348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE7337A7-79C8-457F-BBAC-974C6A813325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE7337A7-79C8-457F-BBAC-974C6A813325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE7337A7-79C8-457F-BBAC-974C6A813325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE7337A7-79C8-457F-BBAC-974C6A813325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E171357A-2F21-45C8-8D58-1EF66B993982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E171357A-2F21-45C8-8D58-1EF66B993982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E171357A-2F21-45C8-8D58-1EF66B993982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E171357A-2F21-45C8-8D58-1EF66B993982}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B608AD7-6AD7-4A28-8E72-3C601CF884EE}
+	EndGlobalSection
+EndGlobal

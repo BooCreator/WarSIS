@@ -1,0 +1,36 @@
+﻿<Window x:Class="WarSIS.MainForms.SubdivisionForms.ToBuilding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WarSIS.MainForms.SubdivisionForms"
+        mc:Ignorable="d"
+        Title="Переместить в здание" Height="130" Width="300" WindowStyle="ToolWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" SizeToContent="Height">
+    <Grid Margin="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="ButtonsGrid" Grid.Row="2" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="ButtonYes" Content="Сохранить" Grid.Column="0" Margin="10,5" Cursor="Hand" Click="ButtonYes_Click"/>
+            <Button x:Name="ButtonNo" Content="Отмена" Grid.Column="1" Margin="10,5" Cursor="Hand" IsCancel="True" IsDefault="True"/>
+        </Grid>
+        <TextBlock Margin="5,0" TextWrapping="Wrap" Text="Здание:" VerticalAlignment="Center" Grid.Row="1"/>
+        <ComboBox x:Name="BuildingsBox" Grid.Column="1" Margin="10,0" VerticalAlignment="Center" Grid.Row="1"/>
+        <TextBlock Margin="5,5.52" TextWrapping="Wrap" Text="Подразделение:" VerticalAlignment="Center"/>
+        <TextBlock x:Name="TitleBox" Margin="10,0" TextWrapping="Wrap" Text="Рота 1" VerticalAlignment="Center" Grid.Column="1"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,40 @@
+﻿<Window x:Class="WarSIS.MainForms.SubdivisionForms.SetUpper"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WarSIS.MainForms.SubdivisionForms"
+        mc:Ignorable="d"
+        Title="Назначить вышестоящую" Height="170" Width="300" ResizeMode="NoResize" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" SizeToContent="Height">
+    <Grid Margin="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="105"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="ButtonsGrid" Grid.Row="4" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="ButtonYes" Content="Сохранить" Grid.Column="0" Margin="10,5" Click="ButtonYes_Click"/>
+            <Button x:Name="ButtonNo" Content="Отмена" Grid.Column="1" Margin="10,5" IsCancel="True" IsDefault="True"/>
+        </Grid>
+        <TextBlock Margin="10,0" TextWrapping="Wrap" Text="Тип:" VerticalAlignment="Center" Grid.Row="1" Height="16"/>
+        <TextBlock Margin="10,0,5,0" TextWrapping="Wrap" Text="Подразделение:" VerticalAlignment="Center"/>
+        <TextBlock x:Name="Subdivision_name" Margin="10,7" TextWrapping="Wrap" Text="Рота 1" VerticalAlignment="Center" Grid.Column="1" Height="16"/>
+        <ComboBox x:Name="UpperBox" Grid.Column="1" Margin="10,0" Grid.Row="2" VerticalAlignment="Center"/>
+        <TextBlock Margin="10,0" TextWrapping="Wrap" Text="Вышестоящая:" VerticalAlignment="Center" Grid.Row="2" Height="16"/>
+        <ComboBox x:Name="TypeBox" Grid.Column="1" Margin="10,0" Grid.Row="1" VerticalAlignment="Center" SelectionChanged="TypeBox_SelectionChanged"/>
+
+    </Grid>
+</Window>

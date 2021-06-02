@@ -1,0 +1,43 @@
+﻿<Window x:Class="WarSIS.SharedForms.LoginForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WarSIS.SharedForms"
+        mc:Ignorable="d"
+        Title="Вход в систему" Height="150" Width="258" WindowStyle="ToolWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Margin="4,9,4,4" TextWrapping="Wrap" Text="Логин:"/>
+            <TextBox x:Name="LoginBox" Grid.Column="1" Margin="4,9,4,5" TextWrapping="Wrap" TabIndex="0" Text="people" />
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Margin="4" TextWrapping="Wrap" Text="Пароль:"/>
+            <PasswordBox x:Name="PasswordBox" Grid.Column="1" Margin="4" TabIndex="1" Password="people" />
+        </Grid>
+        <Button Content="Войти" Grid.Row="2" Margin="4" Cursor="Hand" Click="Button_Click" TabIndex="2"/>
+    </Grid>
+</Window>

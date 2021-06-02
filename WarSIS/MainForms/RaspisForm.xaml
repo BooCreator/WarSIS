@@ -1,0 +1,168 @@
+﻿<Window x:Class="WarSIS.MainForms.RaspisForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WarSIS.MainForms"
+        mc:Ignorable="d"
+        Title="Работа с расписанием" Height="600" Width="810" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" Closing="Window_Closing" SizeToContent="Height" MinWidth="810" MinHeight="600">
+    <Grid Margin="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="200"/>
+            <ColumnDefinition MinWidth="200"/>
+            <ColumnDefinition MinWidth="200"/>
+            <ColumnDefinition MinWidth="200"/>
+        </Grid.ColumnDefinitions>
+        <Menu Grid.ColumnSpan="4">
+            <MenuItem Header="Операции" Margin="4,0,0,0" SubmenuOpened="MenuItem_SubmenuOpened" Height="30">
+                <MenuItem Header="Новое" Click="MenuItem_Click" />
+                <MenuItem Header="Открыть" Click="MenuItem_Click_1" />
+                <MenuItem Header="Сохранить" Click="MenuItem_Click_2" />
+                <Separator/>
+                <MenuItem Header="Печать" Click="MenuItem_Click_3"/>
+            </MenuItem>
+            <MenuItem Header="Дополнительно" Margin="4,0,0,0" SubmenuOpened="MenuItem_SubmenuOpened" Visibility="Hidden">
+                <MenuItem Header="Погода на неделю" />
+            </MenuItem>
+        </Menu>
+        <GroupBox Header="Понедельник" Grid.Row="1" Margin="4">
+            <Grid Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="24"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Content="+" HorizontalAlignment="Left" Margin="2,2,0,2" Grid.Row="1" Width="20" Background="#FF89C783" Foreground="White" Click="Button_Click"/>
+                <Button Content="Х" HorizontalAlignment="Right" Margin="0,2,2,2" Grid.Row="1" VerticalAlignment="Top" Width="20" Background="#FFFD8E8E" Foreground="White" Visibility="Hidden"/>
+                <Grid x:Name="Monday">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Вторник" Grid.Row="1" Margin="4" Grid.Column="1">
+            <Grid Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="24"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Content="+" HorizontalAlignment="Left" Margin="2,2,0,2" Grid.Row="1" Width="20" Background="#FF89C783" Foreground="White" Click="Button_Click_2"/>
+                <Button Content="Х" HorizontalAlignment="Right" Margin="0,2,2,2" Grid.Row="1" VerticalAlignment="Top" Width="20" Background="#FFFD8E8E" Foreground="White" Visibility="Hidden"/>
+                <Grid x:Name="Tuesday">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Среда" Grid.Row="1" Margin="4" Grid.Column="2">
+            <Grid Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="24"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Content="+" HorizontalAlignment="Left" Margin="2,2,0,2" Grid.Row="1" Width="20" Background="#FF89C783" Foreground="White" Click="Button_Click_3"/>
+                <Button Content="Х" HorizontalAlignment="Right" Margin="0,2,2,2" Grid.Row="1" VerticalAlignment="Top" Width="20" Background="#FFFD8E8E" Foreground="White" Visibility="Hidden"/>
+                <Grid x:Name="Wednesday">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Четверг" Grid.Row="1" Margin="4" Grid.Column="3">
+            <Grid Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="24"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Content="+" HorizontalAlignment="Left" Margin="2,2,0,2" Grid.Row="1" Width="20" Background="#FF89C783" Foreground="White" Click="Button_Click_4"/>
+                <Button Content="Х" HorizontalAlignment="Right" Margin="0,2,2,2" Grid.Row="1" VerticalAlignment="Top" Width="20" Background="#FFFD8E8E" Foreground="White" Visibility="Hidden"/>
+                <Grid x:Name="Thursday">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Пятница" Grid.Row="2" Margin="4">
+            <Grid Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="24"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Content="+" HorizontalAlignment="Left" Margin="2,2,0,2" Grid.Row="1" Width="20" Background="#FF89C783" Foreground="White" Click="Button_Click_5"/>
+                <Button Content="Х" HorizontalAlignment="Right" Margin="0,2,2,2" Grid.Row="1" VerticalAlignment="Top" Width="20" Background="#FFFD8E8E" Foreground="White" Visibility="Hidden"/>
+                <Grid x:Name="Friday">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Суббота" Grid.Row="2" Margin="4" Grid.Column="1">
+            <Grid Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="24"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Content="+" HorizontalAlignment="Left" Margin="2,2,0,2" Grid.Row="1" Width="20" Background="#FF89C783" Foreground="White" Click="Button_Click_6"/>
+                <Button Content="Х" HorizontalAlignment="Right" Margin="0,2,2,2" Grid.Row="1" VerticalAlignment="Top" Width="20" Background="#FFFD8E8E" Foreground="White" Visibility="Hidden"/>
+                <Grid x:Name="Saturday">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Воскресенье" Grid.Row="2" Margin="4" Grid.Column="2">
+            <Grid Margin="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="24"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Content="+" HorizontalAlignment="Left" Margin="2,2,0,2" Grid.Row="1" Width="20" Background="#FF89C783" Foreground="White" Click="Button_Click_7"/>
+                <Button Content="Х" HorizontalAlignment="Right" Margin="0,2,2,2" Grid.Row="1" VerticalAlignment="Top" Width="20" Background="#FFFD8E8E" Foreground="White" Visibility="Hidden"/>
+                <Grid x:Name="Sunday">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
